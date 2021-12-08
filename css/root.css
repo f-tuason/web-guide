@@ -1,0 +1,30 @@
+.mnu-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.mnu-item a:hover {
+  color: blue;
+  font-weight: bold;
+  border-bottom: 5px solid;
+}
+
+.img-logo,
+.header-logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mnu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mnu-item {
+  padding: 5px 10px 5px 10px;
+}
+
+.mnu-header {
+  font-size: 20px;
+}

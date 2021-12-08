@@ -1,0 +1,2531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unang buwan sa Uplift - tinoy</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/intro.css" />
+    <link rel="stylesheet" href="css/git.css" />
+    <link rel="stylesheet" href="css/html.css" />
+    <link rel="stylesheet" href="css/htmlfrm.css" />
+    <link rel="stylesheet" href="css/css.css" />
+    <link rel="stylesheet" href="css/flex.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/usrfrm.css" />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Catamaran", sans-serif;
+      }
+
+      body {
+        background-color: lightslategray;
+      }
+
+      section {
+        background-color: white;
+        width: 95%;
+        margin: 20px auto 20px auto;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      div {
+        line-height: 24px;
+      }
+
+      h2 {
+        color: blue;
+        text-align: center;
+        letter-spacing: 3px;
+        font-size: 30px;
+        margin: 20px;
+      }
+
+      header,
+      footer {
+        background-color: orange;
+        padding: 10px;
+        color: white;
+      }
+
+      footer {
+        text-align: center;
+        padding-bottom: 10px;
+      }
+
+      .float-right {
+        float: right;
+      }
+
+      .large-text {
+        font-size: 50px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        color: green;
+      }
+
+      .small-text {
+        float: right;
+        font-size: 16px;
+        color:orange;
+        text-decoration: none;
+      }
+
+      .align-left {
+        text-align: left;
+      }
+
+      .align-center {
+        text-align: center;
+      }
+
+      .alt-color-1, .alt-color-2, .alt-color-3, .alt-color-4, .alt-color-5, .alt-color-6, .alt-color-7 {
+        color: green;
+      }
+
+      #to-top {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+      }
+
+      #to-top:hover {
+        background-color: #555;
+      }
+
+      .clearfix:after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .visitor-counter {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <!-- ##menu -->
+    <header>
+      <div class="top-header">
+        <img class="img-logo" src="images/logo.png" alt="logo" />
+        <div class="header-logo">
+          &nbsp;&nbsp;<b class="mnu-header">Tinoy</b>
+        </div>
+      </div>
+
+      <div class="mnu">
+        <div class="mnu-item"><a href="#intro">INTRO</a></div>
+        <div class="mnu-item"><a href="#git">GIT</a></div>
+        <div class="mnu-item"><a href="#html">HTML</a></div>
+        <div class="mnu-item"><a href="#formui">FORMS</a></div>
+        <div class="mnu-item"><a href="#css">CSS</a></div>
+        <div class="mnu-item"><a href="#flexbox">FLEXBOX</a></div>
+        <div class="mnu-item"><a href="#gallery">GALLERY</a></div>
+        <div class="mnu-item"><a href="#userform">USERFORM</a></div>
+      </div>
+    </header>
+
+    <main>
+      <!-- INTRO -->
+      <!-- ##intro -->
+      <section class="intro">
+        <h2 id="intro">Introduction</h2>
+
+        <div class="intro-flex-1">
+          <div class="intro-flex-2">
+            <div class="intro-item-1"><b class="alt-color-1">Name</b></div>
+            <div class="intro-item-2">:</div>
+            <div class="intro-item-3">Florentino Tuason</div>
+          </div>
+          <div class="intro-flex-2">
+            <div class="intro-item-1"><b class="alt-color-1">Uplift Batch Name</b></div>
+            <div class="intro-item-2">:</div>
+            <div class="intro-item-3">UB4</div>
+          </div>
+          <div class="intro-flex-2">
+            <div class="intro-item-1"><b class="alt-color-1">Project Name</b></div>
+            <div class="intro-item-2">:</div>
+            <div class="intro-item-3"><em>Unang Buwan sa Uplift</em></div>
+          </div>
+          <div class="intro-flex-2">
+            <div class="intro-item-1"><b class="alt-color-1">Objective</b></div>
+            <div class="intro-item-2">:</div>
+            <div class="intro-item-3">
+              Lahat (halos) ng napagaralan sa unang buwan sa Uplift Code Camp
+            </div>
+          </div>
+          <div class="intro-flex-2">
+            <div class="intro-item-1"><b class="alt-color-1">Disadvantages</b></div>
+            <div class="intro-item-2">:</div>
+            <div class="intro-item-3">
+              Walang mapagtestingan ng square monitor or monitor na mas higit pa
+              sa 1366 (width)<br />
+              Some alignments are off
+            </div>
+          </div>
+          <div class="intro-flex-2">
+            <div class="intro-item-1"><b class="alt-color-1">Lessons gained from Project</b></div>
+            <div class="intro-item-2">:</div>
+            <div class="intro-item-3">
+              Gumawa sa separate files, then pagsama-samahin sa huli (merge)
+              (para hindi malito)<br />
+              Wag i-number ang sections para madali lang pagpali-palitin.<br />
+              Magplan ng naming conventions sa unang una para hindi magulo sa
+              pag name ng selectors<br />
+              I-minimize kung maari ang CSS at ilagay sa attributes<br />
+              Manage your time well, magplano para alam ang mga susunod na
+              gagawin<br />
+              Unahin ang madali, iwan ang mahirap (para sa huli, madali matapos
+              yung mga madadali)
+            </div>
+          </div>
+          <div class="intro-flex-2">
+            <div class="intro-item-1"><b class="alt-color-1">Theme</b></div>
+            <div class="intro-item-2">:</div>
+            <div class="intro-item-3">
+              Basic (Google font Catamaran is used)
+            </div>
+          </div>
+          <div class="intro-flex-2">
+            <div class="intro-item-1"><b class="alt-color-1">Technologies used</b></div>
+            <div class="intro-item-2">:</div>
+            <div class="intro-item-3">
+              jquery (v3.6)<br />Some javascript
+            </div>
+          </div>
+          <div class="intro-flex-2">
+            <div class="intro-item-1"><b class="alt-color-1">Project Stats</b></div>
+            <div class="intro-item-2">:</div>
+            <div class="intro-item-3">index.html, 8 css files, 1 script file, 12 images, 15 gallery images</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GIT -->
+      <!-- ##git -->
+      <section class="git">
+        <h2 id="git">GIT - Open Source Distributed Version Control System</h2>
+        <p class="align-center">
+          Collaborate with code bases where multiple developers are working on
+        </p>
+        <p>&nbsp;</p>
+
+        <div class="git-flex-1">
+          <div class="git-flex-2">
+            <div class="git-item-hr"><hr /></div>
+
+            <div class="git-flex-3">
+              <div class="git-item-1"><em class="alt-color-2">git init</em></div>
+              <div class="git-item-2">
+                <a onclick='cpy_git("git_init"); return false;' href="#"
+                  ><img
+                    class="img-section-1"
+                    src="images/copy.png"
+                    alt="copy"
+                    width="20"
+                    height="20"
+                /></a>
+              </div>
+              <div class="git-item-3">
+                Converts project directory into a GIT repository
+              </div>
+            </div>
+
+            <div class="git-item-hr"><hr /></div>
+
+            <div class="git-flex-3">
+              <div class="git-item-1"><em class="alt-color-2">git clone &lt;repo_url&gt;</em></div>
+              <div class="git-item-2">
+                <a onclick='cpy_git("git_clone"); return false;' href="#"
+                  ><img
+                    class="img-section-1"
+                    src="images/copy.png"
+                    alt="copy"
+                    width="20"
+                    height="20"
+                /></a>
+              </div>
+              <div class="git-item-3">Clone a repo_url to a local folder</div>
+            </div>
+
+            <div class="git-item-hr"><hr /></div>
+
+            <div class="git-flex-3">
+              <div class="git-item-1"><em class="alt-color-2">git fetch</em></div>
+              <div class="git-item-2">
+                <a onclick='cpy_git("git_fetch"); return false;' href="#"
+                  ><img
+                    class="img-section-1"
+                    src="images/copy.png"
+                    alt="copy"
+                    width="20"
+                    height="20"
+                /></a>
+              </div>
+              <div class="git-item-3">Fetch a repository/branch</div>
+            </div>
+
+            <div class="git-item-hr"><hr /></div>
+
+            <div class="git-flex-3">
+              <div class="git-item-1"><em class="alt-color-2">git add &lt;files&gt;</em></div>
+              <div class="git-item-2">
+                <a onclick='cpy_git("git_add"); return false;' href="#"
+                  ><img
+                    class="img-section-1"
+                    src="images/copy.png"
+                    alt="copy"
+                    width="20"
+                    height="20"
+                /></a>
+              </div>
+              <div class="git-item-3">Add changes to the staging area</div>
+            </div>
+
+            <div class="git-item-hr"><hr /></div>
+
+            <div class="git-flex-3">
+              <div class="git-item-1">
+                <em class="alt-color-2">git commit -m &apos;message&apos;</em>
+              </div>
+              <div class="git-item-2">
+                <a onclick='cpy_git("git_commit"); return false;' href="#"
+                  ><img
+                    class="img-section-1"
+                    src="images/copy.png"
+                    alt="copy"
+                    width="20"
+                    height="20"
+                /></a>
+              </div>
+              <div class="git-item-3">Save changes to the repository</div>
+            </div>
+
+            <div class="git-item-hr"><hr /></div>
+
+            <div class="git-flex-3">
+              <div class="git-item-1"><em class="alt-color-2">git push &lt;repo_url&gt;</em></div>
+              <div class="git-item-2">
+                <a onclick='cpy_git("git_push"); return false;' href="#"
+                  ><img
+                    class="img-section-1"
+                    src="images/copy.png"
+                    alt="copy"
+                    width="20"
+                    height="20"
+                /></a>
+              </div>
+              <div class="git-item-3">Push commits to remote repository</div>
+            </div>
+
+            <div class="git-item-hr"><hr /></div>
+
+            <div class="git-flex-3">
+              <div class="git-item-1"><em class="alt-color-2">git pull &lt;repo_url&gt;</em></div>
+              <div class="git-item-2">
+                <a onclick='cpy_git("git_pull"); return false;' href="#"
+                  ><img
+                    class="img-section-1"
+                    src="images/copy.png"
+                    alt="copy"
+                    width="20"
+                    height="20"
+                /></a>
+              </div>
+              <div class="git-item-3">
+                Clone a repository into a blank folder
+              </div>
+            </div>
+
+            <div class="git-item-hr"><hr /></div>
+
+            <div class="git-flex-3">
+              <div class="git-item-1"><em class="alt-color-2">git status</em></div>
+              <div class="git-item-2">
+                <a onclick='cpy_git("git_status"); return false;' href="#"
+                  ><img
+                    class="img-section-1"
+                    src="images/copy.png"
+                    alt="copy"
+                    width="20"
+                    height="20"
+                /></a>
+              </div>
+              <div class="git-item-3">Displays the state of the repository</div>
+            </div>
+          </div>
+
+          <div class="git-flex-2">
+            <div class="git-item-hr"><hr /></div>
+
+            <div class="git-flex-3">
+              <div class="git-item-1"><em class="alt-color-2">git branch</em></div>
+              <div class="git-item-2">
+                <a onclick='cpy_git("git_list_branch"); return false;' href="#"
+                  ><img
+                    class="img-section-1"
+                    src="images/copy.png"
+                    alt="copy"
+                    width="20"
+                    height="20"
+                /></a>
+              </div>
+              <div class="git-item-3">Show/List existing branches</div>
+            </div>
+
+            <div class="git-item-hr"><hr /></div>
+
+            <div class="git-flex-3">
+              <div class="git-item-1"><em class="alt-color-2">git branch &lt;name&gt;</em></div>
+              <div class="git-item-2">
+                <a
+                  onclick='cpy_git("git_create_branch"); return false;'
+                  href="#"
+                  ><img
+                    class="img-section-1"
+                    src="images/copy.png"
+                    alt="copy"
+                    width="20"
+                    height="20"
+                /></a>
+              </div>
+              <div class="git-item-3">Create a new branch</div>
+            </div>
+
+            <div class="git-item-hr"><hr /></div>
+
+            <div class="git-flex-3">
+              <div class="git-item-1"><em class="alt-color-2">git checkout &lt;branch&gt;</em></div>
+              <div class="git-item-2">
+                <a onclick='cpy_git("git_checkout"); return false;' href="#"
+                  ><img
+                    class="img-section-1"
+                    src="images/copy.png"
+                    alt="copy"
+                    width="20"
+                    height="20"
+                /></a>
+              </div>
+              <div class="git-item-3">Switch to the branch</div>
+            </div>
+
+            <div class="git-item-hr"><hr /></div>
+
+            <div class="git-flex-3">
+              <div class="git-item-1">
+                <em class="alt-color-2">git checkout -b &lt;branch&gt;</em>
+              </div>
+              <div class="git-item-2">
+                <a onclick='cpy_git("git_checkout_alt"); return false;' href="#"
+                  ><img
+                    class="img-section-1"
+                    src="images/copy.png"
+                    alt="copy"
+                    width="20"
+                    height="20"
+                /></a>
+              </div>
+              <div class="git-item-3">Create and Switch to the new branch</div>
+            </div>
+
+            <div class="git-item-hr"><hr /></div>
+
+            <div class="git-flex-3">
+              <div class="git-item-1">
+                <em class="alt-color-2">git branch -d &lt;name&gt;</em>
+              </div>
+              <div class="git-item-2">
+                <a onclick='cpy_git("git_branch_d"); return false;' href="#"
+                  ><img
+                    class="img-section-1"
+                    src="images/copy.png"
+                    alt="copy"
+                    width="20"
+                    height="20"
+                /></a>
+              </div>
+              <div class="git-item-3">Delete branch</div>
+            </div>
+
+            <div class="git-item-hr"><hr /></div>
+
+            <div class="git-flex-3">
+              <div class="git-item-1">
+                <em class="alt-color-2">git branch -m &lt;new name&gt;</em>
+              </div>
+              <div class="git-item-2">
+                <a onclick='cpy_git("git_branch_m"); return false;' href="#"
+                  ><img
+                    class="img-section-1"
+                    src="images/copy.png"
+                    alt="copy"
+                    width="20"
+                    height="20"
+                /></a>
+              </div>
+              <div class="git-item-3">Rename current branch to new name</div>
+            </div>
+
+            <div class="git-item-hr"><hr /></div>
+
+            <div class="git-flex-3">
+              <div class="git-item-1"><em class="alt-color-2">git merge &lt;branch&gt;</em></div>
+              <div class="git-item-2">
+                <a onclick='cpy_git("git_merge"); return false;' href="#"
+                  ><img
+                    class="img-section-1"
+                    src="images/copy.png"
+                    alt="copy"
+                    width="20"
+                    height="20"
+                /></a>
+              </div>
+              <div class="git-item-3">Merge/Integrate branch to current</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HTML -->
+      <!-- ##html -->
+      <section class="html">
+        <h2 id="html">
+          HTML - HyperText Markup Language
+        </h2>
+        <div class="htm-flex-1">
+          <div class="htm-item-1"><hr /></div>
+          <div class="htm-item-2"><b class="alt-color-4">Common</b></div>
+          <div class="htm-item-3">
+            <button
+              onclick="cpy_htm('p'); return false;"
+              onmousemove="omm('p', 'opt-1'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              p
+            </button>
+            <button
+              onclick="cpy_htm('h1'); return false;"
+              onmousemove="omm('h1', 'opt-1'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              h1
+            </button>
+            <button
+              onclick="cpy_htm('h2'); return false;"
+              onmousemove="omm('h2', 'opt-1'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              h2
+            </button>
+            <button
+              onclick="cpy_htm('h3'); return false;"
+              onmousemove="omm('h3', 'opt-1'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              h3
+            </button>
+            <button
+              onclick="cpy_htm('h4'); return false;"
+              onmousemove="omm('h4', 'opt-1'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              h4
+            </button>
+            <button
+              onclick="cpy_htm('h5'); return false;"
+              onmousemove="omm('h5', 'opt-1'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              h5
+            </button>
+            <button
+              onclick="cpy_htm('h6'); return false;"
+              onmousemove="omm('h6', 'opt-1'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              h6
+            </button>
+            <button
+              onclick="cpy_htm('cmt'); return false;"
+              onmousemove="omm('cmt', 'opt-1'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              &lt;!--
+            </button>
+            <div class="opt-1"></div>
+          </div>
+          <div class="htm-item-1"><hr /></div>
+          <div class="htm-item-2"><b class="alt-color-4">Div, Span</b></div>
+          <div class="htm-item-3">
+            <button
+              onclick="cpy_htm('ahref'); return false;"
+              onmousemove="omm('ahref', 'opt-2'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              a href
+            </button>
+            <button
+              onclick="cpy_htm('div'); return false;"
+              onmousemove="omm('div', 'opt-2'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              div
+            </button>
+            <button
+              onclick="cpy_htm('span'); return false;"
+              onmousemove="omm('span', 'opt-2'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              span
+            </button>
+            <button
+              onclick="cpy_htm('h1id'); return false;"
+              onmousemove="omm('h1id', 'opt-2'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              h1#
+            </button>
+            <button
+              onclick="cpy_htm('h2id'); return false;"
+              onmousemove="omm('h2id', 'opt-2'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              h2#
+            </button>
+            <button
+              onclick="cpy_htm('h3id'); return false;"
+              onmousemove="omm('h3id', 'opt-2'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              h3#
+            </button>
+            <button
+              onclick="cpy_htm('h4id'); return false;"
+              onmousemove="omm('h4id', 'opt-2'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              h4#
+            </button>
+            <button
+              onclick="cpy_htm('h5id'); return false;"
+              onmousemove="omm('h5id', 'opt-2'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              h5#
+            </button>
+            <button
+              onclick="cpy_htm('h6id'); return false;"
+              onmousemove="omm('h6id', 'opt-2'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              h6#
+            </button>
+            <div class="opt-2"></div>
+          </div>
+          <div class="htm-item-1"><hr /></div>
+          <div class="htm-item-2"><b class="alt-color-4">Images</b></div>
+          <div class="htm-item-3">
+            <button
+              onclick="cpy_htm('img'); return false;"
+              onmousemove="omm('img', 'opt-3'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              img
+            </button>
+            <button
+              onclick="cpy_htm('map'); return false;"
+              onmousemove="omm('map', 'opt-3'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              map
+            </button>
+            <button
+              onclick="cpy_htm('area'); return false;"
+              onmousemove="omm('area', 'opt-3'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              area
+            </button>
+            <button
+              onclick="cpy_htm('canvas'); return false;"
+              onmousemove="omm('canvas', 'opt-3'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              canvas
+            </button>
+            <button
+              onclick="cpy_htm('picture'); return false;"
+              onmousemove="omm('picture', 'opt-3'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              picture
+            </button>
+            <button
+              onclick="cpy_htm('svg'); return false;"
+              onmousemove="omm('svg', 'opt-3'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              svg
+            </button>
+            <button
+              onclick="cpy_htm('figure'); return false;"
+              onmousemove="omm('figure', 'opt-3'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              figure
+            </button>
+            <button
+              onclick="cpy_htm('figcaption'); return false;"
+              onmousemove="omm('figcaption', 'opt-3'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              figcaption
+            </button>
+            <div class="opt-3"></div>
+          </div>
+          <div class="htm-item-1"><hr /></div>
+          <div class="htm-item-2"><b class="alt-color-4">Formatting</b></div>
+          <div class="htm-item-3">
+            <button
+              onclick="cpy_htm('em'); return false;"
+              onmousemove="omm('em', 'opt-4'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              <i>em</i>
+            </button>
+            <button
+              onclick="cpy_htm('i'); return false;"
+              onmousemove="omm('i', 'opt-4'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              <i>i</i>
+            </button>
+            <button
+              onclick="cpy_htm('strong'); return false;"
+              onmousemove="omm('strong', 'opt-4'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              <b>strong</b>
+            </button>
+            <button
+              onclick="cpy_htm('b'); return false;"
+              onmousemove="omm('b', 'opt-4'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              <b>b</b>
+            </button>
+            <button
+              onclick="cpy_htm('u'); return false;"
+              onmousemove="omm('u', 'opt-4'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              <u>u</u>
+            </button>
+            <button
+              onclick="cpy_htm('ins'); return false;"
+              onmousemove="omm('ins', 'opt-4'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              ins
+            </button>
+            <button
+              onclick="cpy_htm('del'); return false;"
+              onmousemove="omm('del', 'opt-4'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              del
+            </button>
+            <button
+              onclick="cpy_htm('mark'); return false;"
+              onmousemove="omm('mark', 'opt-4'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              <mark>mark</mark>
+            </button>
+            <button
+              onclick="cpy_htm('sub'); return false;"
+              onmousemove="omm('sub', 'opt-4'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              sub
+            </button>
+            <button
+              onclick="cpy_htm('sup'); return false;"
+              onmousemove="omm('sup', 'opt-4'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              sup
+            </button>
+            <div class="opt-4"></div>
+          </div>
+          <div class="htm-item-1"><hr /></div>
+          <div class="htm-item-2"><b class="alt-color-4">Break and List</b></div>
+          <div class="htm-item-3">
+            <button
+              onclick="cpy_htm('br'); return false;"
+              onmousemove="omm('br', 'opt-5'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              br
+            </button>
+            <button
+              onclick="cpy_htm('wbr'); return false;"
+              onmousemove="omm('wbr', 'opt-5'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              wbr
+            </button>
+            <button
+              onclick="cpy_htm('hr'); return false;"
+              onmousemove="omm('hr', 'opt-5'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              hr
+            </button>
+            <button
+              onclick="cpy_htm('ul'); return false;"
+              onmousemove="omm('ul', 'opt-5'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              ul
+            </button>
+            <button
+              onclick="cpy_htm('ol'); return false;"
+              onmousemove="omm('ol', 'opt-5'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              ol
+            </button>
+            <button
+              onclick="cpy_htm('li'); return false;"
+              onmousemove="omm('li', 'opt-5'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              li
+            </button>
+            <button
+              onclick="cpy_htm('dl'); return false;"
+              onmousemove="omm('dl', 'opt-5'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              dl
+            </button>
+            <button
+              onclick="cpy_htm('dt'); return false;"
+              onmousemove="omm('dt', 'opt-5'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              dt
+            </button>
+            <button
+              onclick="cpy_htm('dt'); return false;"
+              onmousemove="omm('dt', 'opt-5'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              dd
+            </button>
+            <div class="opt-5"></div>
+          </div>
+          <div class="htm-item-1"><hr /></div>
+          <div class="htm-item-2"><b class="alt-color-4">Semantic</b></div>
+          <div class="htm-item-3">
+            <button
+              onclick="cpy_htm('header'); return false;"
+              onmousemove="omm('header', 'opt-6'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              header
+            </button>
+            <button
+              onclick="cpy_htm('footer'); return false;"
+              onmousemove="omm('footer', 'opt-6'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              footer
+            </button>
+            <button
+              onclick="cpy_htm('main'); return false;"
+              onmousemove="omm('main', 'opt-6'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              main
+            </button>
+            <button
+              onclick="cpy_htm('section'); return false;"
+              onmousemove="omm('section', 'opt-6'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              section
+            </button>
+            <button
+              onclick="cpy_htm('article'); return false;"
+              onmousemove="omm('article', 'opt-6'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              article
+            </button>
+            <button
+              onclick="cpy_htm('aside'); return false;"
+              onmousemove="omm('aside', 'opt-6'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              aside
+            </button>
+            <button
+              onclick="cpy_htm('details'); return false;"
+              onmousemove="omm('details', 'opt-6'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              details
+            </button>
+            <button
+              onclick="cpy_htm('dialog'); return false;"
+              onmousemove="omm('dialog', 'opt-6'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              dialog
+            </button>
+            <button
+              onclick="cpy_htm('summary'); return false;"
+              onmousemove="omm('summary', 'opt-6'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              summary
+            </button>
+            <button
+              onclick="cpy_htm('data'); return false;"
+              onmousemove="omm('data', 'opt-6'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              data
+            </button>
+            <div class="opt-6"></div>
+          </div>
+          <div class="htm-item-1"><hr /></div>
+          <div class="htm-item-2"><b class="alt-color-4">Table</b></div>
+          <div class="htm-item-3">
+            <button
+              onclick="cpy_htm('table'); return false;"
+              onmousemove="omm('table', 'opt-7'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              table
+            </button>
+            <button
+              onclick="cpy_htm('caption'); return false;"
+              onmousemove="omm('caption', 'opt-7'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              caption
+            </button>
+            <button
+              onclick="cpy_htm('th'); return false;"
+              onmousemove="omm('th', 'opt-7'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              th
+            </button>
+            <button
+              onclick="cpy_htm('tr'); return false;"
+              onmousemove="omm('tr', 'opt-7'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              tr
+            </button>
+            <button
+              onclick="cpy_htm('td'); return false;"
+              onmousemove="omm('td', 'opt-7'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              td
+            </button>
+            <button
+              onclick="cpy_htm('thead'); return false;"
+              onmousemove="omm('thead', 'opt-7'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              thead
+            </button>
+            <button
+              onclick="cpy_htm('tbody'); return false;"
+              onmousemove="omm('tbody', 'opt-7'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              tbody
+            </button>
+            <button
+              onclick="cpy_htm('tfoot'); return false;"
+              onmousemove="omm('tfoot', 'opt-7'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              tfoot
+            </button>
+            <button
+              onclick="cpy_htm('col'); return false;"
+              onmousemove="omm('col', 'opt-7'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              col
+            </button>
+            <button
+              onclick="cpy_htm('colgroup'); return false;"
+              onmousemove="omm('colgroup', 'opt-7'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              colgroup
+            </button>
+            <div class="opt-7"></div>
+          </div>
+          <div class="htm-item-1"><hr /></div>
+          <div class="htm-item-2"><b class="alt-color-4">Quote and Code</b></div>
+          <div class="htm-item-3">
+            <button
+              onclick="cpy_htm('blockquote'); return false;"
+              onmousemove="omm('blockquote', 'opt-8'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              blockquote
+            </button>
+            <button
+              onclick="cpy_htm('q'); return false;"
+              onmousemove="omm('q', 'opt-8'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              q
+            </button>
+            <button
+              onclick="cpy_htm('cite'); return false;"
+              onmousemove="omm('cite', 'opt-8'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              cite
+            </button>
+            <button
+              onclick="cpy_htm('code'); return false;"
+              onmousemove="omm('code', 'opt-8'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              code
+            </button>
+            <button
+              onclick="cpy_htm('kbd'); return false;"
+              onmousemove="omm('kbd', 'opt-8'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              kbd
+            </button>
+            <button
+              onclick="cpy_htm('pre'); return false;"
+              onmousemove="omm('pre', 'opt-8'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              pre
+            </button>
+            <button
+              onclick="cpy_htm('samp'); return false;"
+              onmousemove="omm('samp', 'opt-8'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              samp
+            </button>
+            <div class="opt-8"></div>
+          </div>
+          <div class="htm-item-1"><hr /></div>
+          <div class="htm-item-2"><b class="alt-color-4">Audio and Video</b></div>
+          <div class="htm-item-3">
+            <button
+              onclick="cpy_htm('audio'); return false;"
+              onmousemove="omm('audio', 'opt-9'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              audio
+            </button>
+            <button
+              onclick="cpy_htm('source'); return false;"
+              onmousemove="omm('source', 'opt-9'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              source
+            </button>
+            <button
+              onclick="cpy_htm('track'); return false;"
+              onmousemove="omm('track', 'opt-9'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              track
+            </button>
+            <button
+              onclick="cpy_htm('video'); return false;"
+              onmousemove="omm('video', 'opt-9'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              video
+            </button>
+            <div class="opt-9"></div>
+          </div>
+          <div class="htm-item-1"><hr /></div>
+          <div class="htm-item-2"><b class="alt-color-4">Scripts</b></div>
+          <div class="htm-item-3">
+            <button
+              onclick="cpy_htm('iframe'); return false;"
+              onmousemove="omm('iframe', 'opt-10'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              iframe
+            </button>
+            <button
+              onclick="cpy_htm('link'); return false;"
+              onmousemove="omm('link', 'opt-10'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              link
+            </button>
+            <button
+              onclick="cpy_htm('script'); return false;"
+              onmousemove="omm('script', 'opt-10'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              script
+            </button>
+            <button
+              onclick="cpy_htm('noscript'); return false;"
+              onmousemove="omm('noscript', 'opt-10'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              noscript
+            </button>
+            <button
+              onclick="cpy_htm('embed'); return false;"
+              onmousemove="omm('embed', 'opt-10'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              embed
+            </button>
+            <button
+              onclick="cpy_htm('object'); return false;"
+              onmousemove="omm('object', 'opt-10'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              object
+            </button>
+            <button
+              onclick="cpy_htm('param'); return false;"
+              onmousemove="omm('param', 'opt-10'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              param
+            </button>
+            <div class="opt-10"></div>
+          </div>
+          <div class="htm-item-1"><hr /></div>
+          <div class="htm-item-2"><b class="alt-color-4">Others</b></div>
+          <div class="htm-item-3">
+            <button
+              onclick="cpy_htm('head'); return false;"
+              onmousemove="omm('head', 'opt-11'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              head
+            </button>
+            <button
+              onclick="cpy_htm('meta'); return false;"
+              onmousemove="omm('meta', 'opt-11'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              meta
+            </button>
+            <button
+              onclick="cpy_htm('base'); return false;"
+              onmousemove="omm('base', 'opt-11'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              base
+            </button>
+            <button
+              onclick="cpy_htm('title'); return false;"
+              onmousemove="omm('title', 'opt-11'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              title
+            </button>
+            <button
+              onclick="cpy_htm('abbr'); return false;"
+              onmousemove="omm('abbr', 'opt-11'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              abbr
+            </button>
+            <button
+              onclick="cpy_htm('dfn'); return false;"
+              onmousemove="omm('dfn', 'opt-11'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              dfn
+            </button>
+            <button
+              onclick="cpy_htm('address'); return false;"
+              onmousemove="omm('address', 'opt-11'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              address
+            </button>
+            <button
+              onclick="cpy_htm('bdi'); return false;"
+              onmousemove="omm('bdi', 'opt-11'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              bdi
+            </button>
+            <button
+              onclick="cpy_htm('bdo'); return false;"
+              onmousemove="omm('bdo', 'opt-11'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              bdo
+            </button>
+            <button
+              onclick="cpy_htm('meter'); return false;"
+              onmousemove="omm('meter', 'opt-11'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              meter
+            </button>
+            <button
+              onclick="cpy_htm('progress'); return false;"
+              onmousemove="omm('progress', 'opt-11'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              progress
+            </button>
+            <button
+              onclick="cpy_htm('rp'); return false;"
+              onmousemove="omm('rp', 'opt-11'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              rp
+            </button>
+            <button
+              onclick="cpy_htm('rt'); return false;"
+              onmousemove="omm('rt', 'opt-11'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              rt
+            </button>
+            <button
+              onclick="cpy_htm('ruby'); return false;"
+              onmousemove="omm('ruby', 'opt-11'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              ruby
+            </button>
+            <button
+              onclick="cpy_htm('template'); return false;"
+              onmousemove="omm('template', 'opt-11'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              template
+            </button>
+            <button
+              onclick="cpy_htm('time'); return false;"
+              onmousemove="omm('time', 'opt-11'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              time
+            </button>
+            <button
+              onclick="cpy_htm('var'); return false;"
+              onmousemove="omm('var', 'opt-11'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              var
+            </button>
+            <button
+              onclick="cpy_htm('style'); return false;"
+              onmousemove="omm('style', 'opt-11'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              style
+            </button>
+            <div class="opt-11"></div>
+          </div>
+          <div class="htm-item-1"><hr /></div>
+          <div class="htm-item-2">
+            <b class="alt-color-4">Not Supported in HTML5</b>
+          </div>
+          <div class="htm-item-3">
+            <button
+              onclick="cpy_htm('acronym'); return false;"
+              onmousemove="omm('acronym', 'opt-12'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              acronym
+            </button>
+            <button
+              onclick="cpy_htm('big'); return false;"
+              onmousemove="omm('big', 'opt-12'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              big
+            </button>
+            <button
+              onclick="cpy_htm('center'); return false;"
+              onmousemove="omm('center', 'opt-12'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              center
+            </button>
+            <button
+              onclick="cpy_htm('font'); return false;"
+              onmousemove="omm('font', 'opt-12'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              font
+            </button>
+            <button
+              onclick="cpy_htm('strike'); return false;"
+              onmousemove="omm('strike', 'opt-12'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              strike
+            </button>
+            <button
+              onclick="cpy_htm('tt'); return false;"
+              onmousemove="omm('tt', 'opt-12'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              tt
+            </button>
+            <button
+              onclick="cpy_htm('frame'); return false;"
+              onmousemove="omm('frame', 'opt-12'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              frame
+            </button>
+            <button
+              onclick="cpy_htm('frameset'); return false;"
+              onmousemove="omm('frameset', 'opt-12'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              frameset
+            </button>
+            <button
+              onclick="cpy_htm('noframe'); return false;"
+              onmousemove="omm('noframe', 'opt-12'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              noframe
+            </button>
+            <button
+              onclick="cpy_htm('dir'); return false;"
+              onmousemove="omm('dir', 'opt-12'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              dir
+            </button>
+            <button
+              onclick="cpy_htm('basefont'); return false;"
+              onmousemove="omm('basefont', 'opt-12'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              basefont
+            </button>
+            <button
+              onclick="cpy_htm('applet'); return false;"
+              onmousemove="omm('applet', 'opt-12'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              applet
+            </button>
+            <div class="opt-12"></div>
+          </div>
+        </div>
+        <div class="htm-item-1"><hr /></div>
+        <div class="align-center">
+          <label for="id-1"
+            ><input type="checkbox" name="id" id="id-1" />Id </label
+          >&nbsp;&nbsp;
+          <label for="class-1"
+            ><input
+              type="checkbox"
+              name="class"
+              id="class-1"
+            />Class</label
+          >&nbsp;&nbsp;
+          <label for="react-1"
+            ><input type="checkbox" name="react" id="react-1" />React</label
+          >
+        </div>
+      </section>
+
+      <!-- HTML FORM -->
+      <!-- ##htmlform -->
+      <section>
+        <h2 id="formui">HTML User Interface</h2>
+        <div class="frm-flex-1">
+          <div class="frm-item-1"><hr /></div>
+          <div class="frm-item-2">
+            <b class="alt-color-5">Input</b>
+          </div>
+          <div class="frm-item-3">
+            <button
+              onclick="cpy_frm('itext'); return false;"
+              onmousemove="omm('itext', 'opt-13'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              textbox
+            </button>
+            <button
+              onclick="cpy_frm('ipass'); return false;"
+              onmousemove="omm('ipass', 'opt-13'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              password
+            </button>
+            <button
+              onclick="cpy_frm('ichkbx'); return false;"
+              onmousemove="omm('ichkbx', 'opt-13'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              checkbox
+            </button>
+            <button
+              onclick="cpy_frm('iradio'); return false;"
+              onmousemove="omm('iradio', 'opt-13'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              radio
+            </button>
+            <button
+              onclick="cpy_frm('icolor'); return false;"
+              onmousemove="omm('icolor', 'opt-13'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              color
+            </button>
+            <button
+              onclick="cpy_frm('idate'); return false;"
+              onmousemove="omm('idate', 'opt-13'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              date
+            </button>
+            <button
+              onclick="cpy_frm('idtloc'); return false;"
+              onmousemove="omm('idtloc', 'opt-13'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              datetime-local
+            </button>
+            <button
+              onclick="cpy_frm('iemail'); return false;"
+              onmousemove="omm('iemail', 'opt-13'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              email
+            </button>
+            <button
+              onclick="cpy_frm('ifile'); return false;"
+              onmousemove="omm('ifile', 'opt-13'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              file
+            </button>
+            <button
+              onclick="cpy_frm('ihidden'); return false;"
+              onmousemove="omm('ihidden', 'opt-13'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              hidden
+            </button>
+            <button
+              onclick="cpy_frm('iimage'); return false;"
+              onmousemove="omm('iimage', 'opt-13'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              image
+            </button>
+            <button
+              onclick="cpy_frm('imonth'); return false;"
+              onmousemove="omm('imonth', 'opt-13'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              month
+            </button>
+            <button
+              onclick="cpy_frm('inumber'); return false;"
+              onmousemove="omm('inumber', 'opt-13'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              number
+            </button>
+            <button
+              onclick="cpy_frm('irange'); return false;"
+              onmousemove="omm('irange', 'opt-13'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              range
+            </button>
+            <button
+              onclick="cpy_frm('ireset'); return false;"
+              onmousemove="omm('ireset', 'opt-13'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              reset
+            </button>
+            <button
+              onclick="cpy_frm('isubmit'); return false;"
+              onmousemove="omm('isubmit', 'opt-13'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              submit
+            </button>
+            <button
+              onclick="cpy_frm('isearch'); return false;"
+              onmousemove="omm('isearch', 'opt-13'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              search
+            </button>
+            <button
+              onclick="cpy_frm('itel'); return false;"
+              onmousemove="omm('itel', 'opt-13'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              telephone
+            </button>
+            <button
+              onclick="cpy_frm('itime'); return false;"
+              onmousemove="omm('itime', 'opt-13'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              time
+            </button>
+            <button
+              onclick="cpy_frm('iurl'); return false;"
+              onmousemove="omm('iurl', 'opt-13'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              url
+            </button>
+            <button
+              onclick="cpy_frm('iweek'); return false;"
+              onmousemove="omm('iweek', 'opt-13'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              week
+            </button>
+            <div class="opt-13"></div>
+          </div>
+          <div class="frm-item-1"><hr /></div>
+          <div class="frm-item-2"><b class="alt-color-5">Others</b></div>
+          <div class="frm-item-3">
+            <button
+              onclick="cpy_frm('form'); return false;"
+              onmousemove="omm('form', 'opt-14'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              Form
+            </button>
+            <button
+              onclick="cpy_frm('textarea'); return false;"
+              onmousemove="omm('textarea', 'opt-14'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              Multiple Line Textarea
+            </button>
+            <button
+              onclick="cpy_frm('button'); return false;"
+              onmousemove="omm('button', 'opt-14'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              Button
+            </button>
+            <button
+              onclick="cpy_frm('select'); return false;"
+              onmousemove="omm('select', 'opt-14'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              Dropdown
+            </button>
+            <button
+              onclick="cpy_frm('optgroup'); return false;"
+              onmousemove="omm('optgroup', 'opt-14'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              Optgroup
+            </button>
+            <button
+              onclick="cpy_frm('option'); return false;"
+              onmousemove="omm('option', 'opt-14'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              Optgroup options
+            </button>
+            <button
+              onclick="cpy_frm('fieldset'); return false;"
+              onmousemove="omm('fieldset', 'opt-14'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              Fieldset
+            </button>
+            <button
+              onclick="cpy_frm('legend'); return false;"
+              onmousemove="omm('legend', 'opt-14'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              Legend
+            </button>
+            <button
+              onclick="cpy_frm('datalist'); return false;"
+              onmousemove="omm('datalist', 'opt-14'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              Datalist
+            </button>
+            <button
+              onclick="cpy_frm('output'); return false;"
+              onmousemove="omm('output', 'opt-14'); return false;"
+              onmouseout="clr(); return false;"
+            >
+              Output
+            </button>
+            <div class="opt-14"></div>
+          </div>
+          <div class="frm-item-1"><hr /></div>
+          <div class="align-center">
+            <label for="lab"
+              ><input type="checkbox" name="label" />Label</label
+            >&nbsp;&nbsp;
+            <label for="div-2"
+              ><input type="checkbox" name="div" id="div-2" />Div</label
+            >&nbsp;&nbsp;
+            <label for="id-2"
+              ><input type="checkbox" name="id" id="id-2" />Id</label
+            >&nbsp;&nbsp;
+            <label for="class-2"
+              ><input type="checkbox" name="class" id="class-2" />Class</label
+            >&nbsp;&nbsp;
+            <label for="react-2"
+              ><input type="checkbox" name="react" />React</label
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- CSS -->
+      <!-- ##css -->
+      <section class="css clearfix">
+        <h2 id="css" class="align-center">
+          Selectors<a class="small-text" href="#combinators" class="float-right a-btn">Next</a>
+        </h2>
+
+        <div class="css-flex-1">
+          <div class="css-item-1">
+            <h4 class="alt-color-3">
+              Element<button onclick="cpy_css('tag_sel'); return false;" class="float-right">
+                Copy
+              </button>
+            </h4>
+            <p class="align-left">
+              html_tag {<br />&nbsp;&nbsp;&nbsp;&nbsp;property: "value";<br />}
+            </p>
+          </div>
+
+          <div class="css-item-1">
+            <h4 class="alt-color-3">
+              ID<button onclick="cpy_css('id_sel'); return false;" class="float-right">
+                Copy
+              </button>
+            </h4>
+            <p class="align-left">
+              #id {<br />&nbsp;&nbsp;&nbsp;&nbsp;property: "value";<br />}
+            </p>
+          </div>
+
+          <div class="css-item-1">
+            <h4 class="alt-color-3">
+              Class<button onclick="cpy_css('cls_sel'); return false;" class="float-right">
+                Copy
+              </button>
+            </h4>
+            <p class="align-left">
+              .class {<br />&nbsp;&nbsp;&nbsp;&nbsp;property: "value";<br />}
+            </p>
+          </div>
+
+          <div class="css-item-1">
+            <h4 class="alt-color-3">
+              Universal<button
+                onclick="cpy_css('univ'); return false;"
+                class="float-right"
+              >
+                Copy
+              </button>
+            </h4>
+            <p class="align-left">
+              * {<br />&nbsp;&nbsp;&nbsp;&nbsp;property: "value";<br />}
+            </p>
+          </div>
+
+          <div class="css-item-1">
+            <h4 class="alt-color-3">
+              Multiple<button onclick="cpy_css('multi'); return false;" class="float-right">
+                Copy
+              </button>
+            </h4>
+            <p class="align-left">
+              tag, #id, .class {<br />&nbsp;&nbsp;&nbsp;&nbsp;property: "value";<br />}
+            </p>
+          </div>
+        </div>
+
+        <h2 id="combinators" class="align-center">
+          Combinators<a class="small-text" href="#pseudo-class" class="float-right a-btn">Next</a>
+        </h2>
+
+        <div class="css-flex-1">
+          <div class="css-item-1">
+            <h4 class="alt-color-3">
+              Descendant<button
+                onclick="cpy_css('descendant'); return false;"
+                class="float-right"
+              >
+                Copy
+              </button>
+            </h4>
+            <p class="align-left">
+              div p {<br />&nbsp;&nbsp;&nbsp;&nbsp;property: "value";<br />}
+            </p>
+            <p><b>ALL p</b> elements within a <b>div</b> selector</p>
+          </div>
+
+          <div class="css-item-1">
+            <h4 class="alt-color-3">
+              Child<button onclick="cpy_css('child'); return false;" class="float-right">
+                Copy
+              </button>
+            </h4>
+            <p class="align-left">
+              div > p {<br />&nbsp;&nbsp;&nbsp;&nbsp;property: "value";<br />}
+            </p>
+            <p><b>ALL p</b> elements having <b>div</b> as a parent</p>
+          </div>
+
+          <div class="css-item-1">
+            <h4 class="alt-color-3">
+              Adjacent Sibling<button
+                onclick="cpy_css('adj_sib'); return false;"
+                class="float-right"
+              >
+                Copy
+              </button>
+            </h4>
+            <p class="align-left">
+              div + p {<br />&nbsp;&nbsp;&nbsp;&nbsp;property: "value";<br />}
+            </p>
+            <p>
+              <b>ALL p</b> elements immediately following a <b>div</b> as a
+              sibling.
+            </p>
+          </div>
+
+          <div class="css-item-1">
+            <h4 class="alt-color-3">
+              General Sibling<button
+              onclick="cpy_css('gen_sib'); return false;"
+              class="float-right"
+            >Copy
+            </h4>
+            <p class="align-left">
+              div ~ p {<br />&nbsp;&nbsp;&nbsp;&nbsp;property: "value";<br />}
+            </p>
+            <p>
+              <b>ALL p</b> elements following (not necessarily immediately after)
+              a <b>div</b> as a sibling.
+            </p>
+          </div>
+        </div>
+
+        <h2 id="pseudo-class" class="align-center">
+          Pseudo-classes<a class="small-text" href="#pseudo-element" class="float-right a-btn"
+            >Next</a
+          >
+        </h2>
+
+        <div class="css-flex-1">
+          <div class="css-item-1">
+            <h4 class="alt-color-3">Pseudo-class</h4>
+            <p class="align-left">
+              selector:pseudo-class {<br />&nbsp;&nbsp;&nbsp;&nbsp;property: "value";<br />}
+            </p>
+          </div>
+
+          <div class="css-item-1">
+            <h4 class="alt-color-3">
+              a:link<button onclick="cpy_css('a_link'); return false;" class="float-right">
+                Copy
+              </button>
+            </h4>
+            <p class="align-left">
+              a:link {<br />&nbsp;&nbsp;&nbsp;&nbsp;property: "value";<br />}
+            </p>
+          </div>
+
+          <div class="css-item-1">
+            <h4 class="alt-color-3">
+              a:visited<button
+                onclick="cpy_css('a_vis'); return false;"
+                class="float-right"
+              >
+                Copy
+              </button>
+            </h4>
+            <p class="align-left">
+              a:visited {<br />&nbsp;&nbsp;&nbsp;&nbsp;property: "value";<br />}
+            </p>
+          </div>
+
+          <div class="css-item-1">
+            <h4 class="alt-color-3">
+              a:hover<button onclick="cpy_css('a_hov'); return false;" class="float-right">
+                Copy
+              </button>
+            </h4>
+            <p class="align-left">
+              a:hover {<br />&nbsp;&nbsp;&nbsp;&nbsp;property: "value";<br />}
+            </p>
+          </div>
+
+          <div class="css-item-1">
+            <h4 class="alt-color-3">
+              a:active<button onclick="cpy_css('a_act'); return false;" class="float-right">
+                Copy
+              </button>
+            </h4>
+            <p class="align-left">
+              a:active {<br />&nbsp;&nbsp;&nbsp;&nbsp;property: "value";<br />}
+            </p>
+          </div>
+        </div>
+
+        <h2 id="pseudo-element" class="align-center">
+          Pseudo-elements<a class="small-text" href="#attributes" class="float-right a-btn">Next</a>
+        </h2>
+
+        <div class="css-flex-1">
+          <div class="css-item-1">
+            <h4 class="alt-color-3">
+              First-letter<button
+                onclick="cpy_css('1st_let'); return false;"
+                class="float-right"
+              >
+                Copy
+              </button>
+            </h4>
+            <p class="align-left">
+              tag::first-letter {<br />&nbsp;&nbsp;&nbsp;&nbsp;property: "value";<br />}
+            </p>
+          </div>
+
+          <div class="css-item-1">
+            <h4 class="alt-color-3">
+              First-line<button
+                onclick="cpy_css('1st_line'); return false;"
+                class="float-right"
+              >
+                Copy
+              </button>
+            </h4>
+            <p class="align-left">
+              tag::first-line {<br />&nbsp;&nbsp;&nbsp;&nbsp;property: "value";<br />}
+            </p>
+          </div>
+        </div>
+
+        <h2 id="attributes" class="align-center">
+          Attribute<a class="small-text" href="#specificity" class="float-right a-btn">Next</a>
+        </h2>
+
+        <div class="css-flex-1">
+          <div class="css-item-1">
+            <h4 class="alt-color-3">
+              [attr]<button onclick="cpy_css('attr'); return false;" class="float-right">
+                Copy
+              </button>
+            </h4>
+            <p class="align-left">
+              [attribute] {<br />&nbsp;&nbsp;&nbsp;&nbsp;property: "value";<br />}
+            </p>
+            <p>Select elements having the given attribute.</p>
+          </div>
+
+          <div class="css-item-1">
+            <h4 class="alt-color-3">
+              [attr="value"]<button onclick="cpy_css('attr_val'); return false;" class="float-right">Copy</button>
+            </h4>
+            <p class="align-left">
+              [attribute = "value"] {<br />&nbsp;&nbsp;&nbsp;&nbsp;property: "value";<br />}
+            </p>
+            <p>
+              Select elements having the <b>exact value</b> for a given attribute.
+            </p>
+          </div>
+
+          <div class="css-item-1">
+            <h4 class="alt-color-3">
+              [attr |= "value"]<button
+                onclick="cpy_css('attr_val2'); return false;"
+                class="float-right"
+              >
+                Copy
+              </button>
+            </h4>
+            <p class="align-left">
+              [attribute |= "value"] {<br />&nbsp;&nbsp;&nbsp;&nbsp;property: "value";<br />}
+            </p>
+            <p>
+              Select elements <b>starting</b> with the given word (value) for a
+              given attribute.
+            </p>
+          </div>
+
+          <div class="css-item-1">
+            <h4 class="alt-color-3">
+              [attr ^= "value"]<button
+                onclick="cpy_css('attr_val3'); return false;"
+                class="float-right"
+              >
+                Copy
+              </button>
+            </h4>
+            <p class="align-left">
+              [attribute ^= "value"] {<br />&nbsp;&nbsp;&nbsp;&nbsp;property: "value";<br />}
+            </p>
+            <p>
+              Select elements <b>starting</b> with the given value for a given
+              attribute.
+            </p>
+          </div>
+
+          <div class="css-item-1">
+            <h4 class="alt-color-3">
+              [attr $= "value"]<button
+                onclick="cpy_css('attr_val4'); return false;"
+                class="float-right"
+              >
+                Copy
+              </button>
+            </h4>
+            <p class="align-left">
+              [attribute $= "value"] {<br />&nbsp;&nbsp;&nbsp;&nbsp;property: "value";<br />}
+            </p>
+            <p>
+              Select elements <b>ending</b> with the given value for a given
+              attribute.
+            </p>
+          </div>
+
+          <div class="css-item-1">
+            <h4 class="alt-color-3">
+              [attr ~= "value"]<button
+                onclick="cpy_css('attr_val5'); return false;"
+                class="float-right"
+              >
+                Copy
+              </button>
+            </h4>
+            <p class="align-left">
+              [attribute ~= "value"] {<br />&nbsp;&nbsp;&nbsp;&nbsp;property: "value";<br />}
+            </p>
+            <p>
+              Select elements <b>containing</b> the word (value) for a given
+              attribute.
+            </p>
+          </div>
+
+          <div class="css-item-1">
+            <h4 class="alt-color-3">
+              [attr *= "value"]<button
+                onclick="cpy_css('attr_val6'); return false;"
+                class="float-right"
+              >
+                Copy
+              </button>
+            </h4>
+            <p class="align-left">
+              [attribute *= "value"] {<br />&nbsp;&nbsp;&nbsp;&nbsp;property: "value";<br />}
+            </p>
+            <p>
+              Select elements <b>containing</b> the given value for a given
+              attribute.
+            </p>
+          </div>
+        </div>
+
+        <h2 id="specificity" class="align-center">
+          Specificity<a class="small-text" href="#css-tricks" class="float-right a-btn">Next</a>
+        </h2>
+
+        <div class="css-flex-1">
+
+          <div class="css-item-1">
+            <p class="large-text"><b>1000</b></p>
+            <p class="align-center">Inline-style</p>
+          </div>
+
+          <div class="css-item-1">
+            <p class="large-text"><b>100</b></p>
+            <p class="align-center">Id</p>
+          </div>
+
+          <div class="css-item-1">
+            <p class="large-text"><b>10</b></p>
+            <p class="align-center">Attributes, class, pseudo-class</p>
+          </div>
+
+          <div class="css-item-1">
+            <p class="large-text"><b>1</b></p>
+            <p class="align-center">Tag, pseudo-element</p>
+          </div>
+        </div>
+
+        <p class="align-center">
+          <b>Note</b> If specificity is equal, the latest rule takes effect.<br />
+          <b>Universal selector and inherited values</b> have specificity of 0.
+        </p>
+
+        <h2 id="css-tricks" class="align-center">CSS Tricks</h2>
+
+        <div class="css-flex-1">
+
+          <div class="css-item-1">
+            <h4 class="alt-color-3">
+              Universal Reset<button
+              onclick="cpy_css('univ_reset'); return false;"
+              class="float-right"
+            >Copy</button>
+            </h4>
+            <p class="align-left">
+              * {<br />&nbsp;&nbsp;&nbsp;&nbsp;margin: "0";<br />&nbsp;&nbsp;&nbsp;&nbsp;padding: "0";<br />&nbsp;&nbsp;&nbsp;&nbsp;box-sizing:
+              "border-box";<br />}
+            </p>
+          </div>
+          
+          <div class="css-item-1">
+            <h4 class="alt-color-3">Clearfix<button
+              onclick="cpy_css('clearfix'); return false;"
+              class="float-right"
+            >Copy</button></h4>
+            <p class="align-left">
+              .clearfix:after {<br />&nbsp;&nbsp;&nbsp;&nbsp;content: "";<br />&nbsp;&nbsp;&nbsp;&nbsp;clear:
+              both;<br />&nbsp;&nbsp;&nbsp;&nbsp;display: table;<br />}
+            </p>
+          </div>
+        
+        </div>
+      </section>
+
+      <!-- FLEXBOX -->
+      <!-- ##flex -->
+      <section class="flexbox">
+        <h2 id="flexbox" class="align-center">All about Flexbox</h2>
+        <form action="#" method="post"> 
+        <div class="flx-flex-1">
+          <div class="flx-flex-2">
+            <div class="flx-item-1">
+              <table border="1" cellpadding="5">
+                <tr>
+                  <th colspan="2" width="120">
+                    <b class="alt-color-6">Parent</b>
+                    &nbsp;&nbsp;<input onclick="reset_flex();" type="reset">&nbsp;&nbsp;</button
+                    >&nbsp;&nbsp;<button onclick="copy_parent(); return false;">Copy</button>
+                  </th>
+                </tr>
+
+                <tr>
+                  <td width="50%">
+                    <label for="items">&nbsp;Items</label>
+                  </td>
+                  <td width="50%">
+                    <select
+                      onchange="flx(); return false;"
+                      class="itms"
+                      id="items"
+                    >
+                      <option value=" ">&nbsp;</option>
+                      <option value="text">text</option>
+                      <option value="image">image</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <label for="flex-dir">&nbsp;flex-direction</label>
+                  </td>
+                  <td>
+                    <select
+                      onchange="flx(); return false;"
+                      class="flex-direction"
+                      id="flex-dir"
+                    >
+                      <option value=" ">&nbsp;</option>
+                      <option value="row">row (default)</option>
+                      <option value="row-reverse">row reverse</option>
+                      <option value="column">column</option>
+                      <option value="column-reverse">column reverse</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><label for="flex-wr">&nbsp;flex-wrap</label></td>
+                  <td>
+                    <select
+                      onchange="flx(); return false;"
+                      class="flex-wrap"
+                      id="flex-wr"
+                    >
+                      <option value=" ">&nbsp;</option>
+                      <option value="nowrap">nowrap (default)</option>
+                      <option value="wrap">wrap</option>
+                      <option value="wrap-reverse">wrap reverse</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="justify-contnt">&nbsp;justify-content</label></td>
+                  <td>
+                    <select
+                      onchange="flx(); return false;"
+                      class="justify-content"
+                      id="justify-contnt"
+                    >
+                      <option value=" ">&nbsp;</option>
+                      <option value="flex-start">flex-start (default)</option>
+                      <option value="flex-end">flex-end</option>
+                      <option value="center">center</option>
+                      <option value="space-between">space-between</option>
+                      <option value="space-around">space-around</option>
+                      <option value="space-evenly">space-evenly</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><label for="align-itms">&nbsp;align-items</label></td>
+                  <td>
+                    <select
+                      onchange="flx(); return false;"
+                      class="align-items"
+                      id="align-itms"
+                    >
+                      <option value=" ">&nbsp;</option>
+                      <option value="flex-start">flex-start</option>
+                      <option value="flex-end">flex-end</option>
+                      <option value="center">center</option>
+                      <option value="stretch">stretch (default)</option>
+                      <option value="baseline">baseline</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><label for="align-contnt">&nbsp;align-content</label></td>
+                  <td>
+                    <select
+                      onchange="flx(); return false;"
+                      class="align-content"
+                      id="align-contnt"
+                    >
+                      <option value=" ">&nbsp;</option>
+                      <option value="flex-start">flex-start (default)</option>
+                      <option value="flex-end">flex-end</option>
+                      <option value="center">center</option>
+                      <option value="space-between">space-between</option>
+                      <option value="space-around">space-around</option>
+                      <option value="space-evenly">space-evenly</option>
+                      <option value="stretch">stretch</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <!-- ITEMS -->
+            <!-- ##itm2 -->
+            <div class="flx-item-2">
+              <table border="1" cellpadding="5">
+                <tr>
+                  <th colspan="2" width="120">
+                    <b class="alt-color-6">Items</b>
+                    &nbsp;&nbsp;<button onclick="copy_item(); return false;">Copy</button>
+                  </th>
+                </tr>
+
+                <tr>
+                  <td width="50%"><label for="modify">&nbsp;Modify item</label></td>
+                  <td width="50%">
+                    <select
+                      onchange="flx(); return false;"
+                      class="modfy"
+                      id="modify"
+                    >
+                      <option value=" ">&nbsp;</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><label for="flex-grw">&nbsp;flex-grow</label></td>
+                  <td>
+                    <select
+                      onchange="flx(); return false;"
+                      class="flex-grow"
+                      id="flex-grw"
+                    >
+                      <option value=" ">&nbsp;</option>
+                      <option value="0">0 (default)</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <label for="flex-shrnk">&nbsp;flex-shrink</label
+                    >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  </td>
+                  <td>
+                    <select
+                      onchange="flx(); return false;"
+                      class="flex-shrink"
+                      id="flex-shrnk"
+                    >
+                      <option value=" ">&nbsp;</option>
+                      <option value="0">0</option>
+                      <option value="1">1 (default)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><label for="flex-bass">&nbsp;flex-basis</label></td>
+                  <td>
+                    <select
+                      onchange="flx(); return false;"
+                      class="flex-basis"
+                      id="flex-bass"
+                    >
+                      <option value=" ">&nbsp;</option>
+                      <option value="100%">100% (default)</option>
+                      <option value="0">0</option>
+                      <option value="auto">auto</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td width="40%"><label for="ordr">&nbsp;order</label></td>
+                  <td width="60%">
+                    <select
+                      onchange="flx(); return false;"
+                      class="order"
+                      id="ordr"
+                    >
+                      <option value=" ">&nbsp;</option>
+                      <option value="-3">-3</option>
+                      <option value="-2">-2</option>
+                      <option value="-1">-1</option>
+                      <option value="0">0 (default)</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><label for="align-slf">&nbsp;align-self</label></td>
+                  <td>
+                    <select
+                      onchange="flx(); return false;"
+                      class="align-self"
+                      id="align-slf"
+                    >
+                      <option value=" ">&nbsp;</option>
+                      <option value="auto">auto (default)</option>
+                      <option value="flex-start">flex-start (default)</option>
+                      <option value="flex-end">flex-end</option>
+                      <option value="center">center</option>
+                      <option value="space-between">space-between</option>
+                      <option value="space-around">space-around</option>
+                      <option value="space-evenly">space-evenly</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>   
+        </div>
+        <div>
+          <div class="flx-flex-1">
+            <div class="flx-flex-3"><iframe id="flx-test"></iframe></div>
+          </div>
+        </div>
+        </form>
+      </section>
+
+      <!-- PICTURE GALLERY -->
+      <!-- ##pic -->
+      <section>
+        <h2 id="gallery">Picture Gallery</h2>
+        <div class="pic-flex-1">
+          <div class="pic-container-1">
+            <div>
+              <div class="pic-container-2">
+                <img src="gallery/1.jpg" />
+              </div>
+              <p class="align-center"><b class="alt-color-7">1.jpg</b></p>
+            </div>
+          </div>
+          <div class="pic-container-1">
+            <div>
+              <div class="pic-container-2">
+                <img src="gallery/2.jpg" />
+              </div>
+              <p class="align-center"><b class="alt-color-7">2.jpg</b></p>
+            </div>
+          </div>
+          <div class="pic-container-1">
+            <div>
+              <div class="pic-container-2">
+                <img src="gallery/3.jpg" />
+              </div>
+              <p class="align-center"><b class="alt-color-7">3.jpg</b></p>
+            </div>
+          </div>
+          <div class="pic-container-1">
+            <div>
+              <div class="pic-container-2">
+                <img src="gallery/4.jpg" />
+              </div>
+              <p class="align-center"><b class="alt-color-7">4.jpg</b></p>
+            </div>
+          </div>
+          <div class="pic-container-1">
+            <div>
+              <div class="pic-container-2">
+                <img src="gallery/5.jpg" />
+              </div>
+              <p class="align-center"><b class="alt-color-7">5.jpg</b></p>
+            </div>
+          </div>
+
+          <div class="pic-container-1">
+            <div>
+              <div class="pic-container-2">
+                <img src="gallery/6.jpg" />
+              </div>
+              <p class="align-center"><b class="alt-color-7">6.jpg</b></p>
+            </div>
+          </div>
+          <div class="pic-container-1">
+            <div>
+              <div class="pic-container-2">
+                <img src="gallery/7.jpg" />
+              </div>
+              <p class="align-center"><b class="alt-color-7">7.jpg</b></p>
+            </div>
+          </div>
+          <div class="pic-container-1">
+            <div>
+              <div class="pic-container-2">
+                <img src="gallery/8.jpg" />
+              </div>
+              <p class="align-center"><b class="alt-color-7">8.jpg</b></p>
+            </div>
+          </div>
+          <div class="pic-container-1">
+            <div>
+              <div class="pic-container-2">
+                <img src="gallery/9.jpg" />
+              </div>
+              <p class="align-center"><b class="alt-color-7">9.jpg</b></p>
+            </div>
+          </div>
+          <div class="pic-container-1">
+            <div>
+              <div class="pic-container-2">
+                <img src="gallery/10.jpg" />
+              </div>
+              <p class="align-center"><b class="alt-color-7">10.jpg</b></p>
+            </div>
+          </div>
+
+          <div class="pic-container-1">
+            <div>
+              <div class="pic-container-2">
+                <img src="gallery/11.jpg" />
+              </div>
+              <p class="align-center"><b class="alt-color-7">11.jpg</b></p>
+            </div>
+          </div>
+          <div class="pic-container-1">
+            <div>
+              <div class="pic-container-2">
+                <img src="gallery/12.jpg" />
+              </div>
+              <p class="align-center"><b class="alt-color-7">12.jpg</b></p>
+            </div>
+          </div>
+          <div class="pic-container-1">
+            <div>
+              <div class="pic-container-2">
+                <img src="gallery/13.jpg" />
+              </div>
+              <p class="align-center"><b class="alt-color-7">13.jpg</b></p>
+            </div>
+          </div>
+          <div class="pic-container-1">
+            <div>
+              <div class="pic-container-2">
+                <img src="gallery/14.jpg" />
+              </div>
+              <p class="align-center"><b class="alt-color-7">14.jpg</b></p>
+            </div>
+          </div>
+          <div class="pic-container-1">
+            <div>
+              <div class="pic-container-2">
+                <img src="gallery/15.jpg" />
+              </div>
+              <p class="align-center"><b class="alt-color-7">15.jpg</b></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 8 - USER FORM -->
+      <!-- ##userform -->
+      <section class="userform">
+        <form action="#" method="post">
+          <h2 id="userform">Userform</h2>
+
+          <div class="usr-flex-1">
+            <div class="usr-item-1">
+              <div class="margin-bottom">
+                <label for="name">Name *</label><br />
+                <input name="name" id="name" type="text" required />
+              </div>
+              <div class="margin-bottom">
+                <label for="email">Email *</label><br />
+                <input name="email" id="email" type="email" required />
+              </div>
+              <div class="margin-bottom">
+                <label for="age">Age</label><br />
+                <input name="age" id="age" type="number" min="12" max="60" />
+              </div>
+            </div>
+
+            <div class="usr-item-2">
+              <div class="margin-bottom">
+                <label for="sex">Sex</label><br />
+                <select id="sex" name="sex">
+                  <option value=" ">&nbsp;</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Not saying">Not saying</option>
+                </select>
+              </div>
+              <div class="margin-bottom">
+                <label for="celfon">Celfone #</label><br />
+                <input name="celfon" id="celfon" type="tel" />
+              </div>
+              <div class="margin-bottom">
+                <label for="country">Country</label><br />
+                <input name="country" id="country" type="text" />
+              </div>
+            </div>
+          </div>
+
+          <div class="usr-item-whole margin-bottom">
+            <label for="subject">Subject *</label><br />
+            <input name="subject" id="subject" type="text" required />
+          </div>
+
+          <div class="usr-item-whole margin-bottom">
+            <label for="comment">Comment *</label><br />
+            <textarea name="comment" id="comment" rows="10" required></textarea>
+          </div>
+
+          <div class="align-center">
+            <input
+              name="submit"
+              id="submit"
+              type="submit"
+              value="Submit"
+            />&nbsp;&nbsp;
+            <input name="reset" id="reset" type="reset" value="Reset" />
+          </div>
+        </form>
+      </section>
+
+    </main>
+
+    <footer>
+      Copyright @2021 by Tinoy&nbsp;&nbsp;|&nbsp;&nbsp;<a
+        href="mailto:tinoysoft@gmail.com"
+        >Send me an email</a
+      >&nbsp;&nbsp;|&nbsp;&nbsp;
+      <div class="visitor-counter"></div>
+    </footer>
+
+    <div id="to-top" class="to-top">
+      <img onclick="to_top(); return false;" src="images/to-top.png" alt="arrow top" />
+    </div>
+
+    <script src="scripts/switch.js"></script>
+  </body>
+</html>

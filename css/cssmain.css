@@ -1,0 +1,23 @@
+.css-flex-1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.css-item-1 {
+  border: 1px solid;
+  width: 200px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.css-item-1 h4 {
+  margin-top: 0;
+}
+
+.css-item-1 p {
+  margin-bottom: 0;
+}

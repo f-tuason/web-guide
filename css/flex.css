@@ -1,0 +1,65 @@
+.flx-flex-1,
+.flx-flex-2 {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flx-item-1,
+.flx-item-2 {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.flx-flex-3 {
+  border: 1px solid;
+  width: 290px;
+  height: 290px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+td select {
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+#flx-test {
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* small */
+@media only screen and (max-width: 575px) {
+}
+
+/* medium */
+@media only screen and (min-width: 576px) and (max-width: 775px) {
+  .flx-flex-1,
+  .flx-flex-2 {
+    flex-direction: row;
+  }
+
+  .flx-flex-3 {
+    width: 570px;
+    height: 570px;
+  }
+}
+
+/* large */
+@media only screen and (min-width: 776px) and (max-width: 5000px) {
+  .flx-flex-1,
+  .flx-flex-2 {
+    flex-direction: row;
+  }
+
+  .flx-flex-3 {
+    width: 570px;
+    height: 570px;
+  }
+}

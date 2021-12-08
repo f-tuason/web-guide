@@ -1,0 +1,44 @@
+.pic-flex-1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.pic-container-2 {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic-container-1 {
+  border: 1px solid;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  background-color: lightblue;
+}
+
+.pic-container-2 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* medium */
+@media only screen and (min-width: 576px) and (max-width: 775px) {
+  .pic-container-2 {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+/* large */
+@media only screen and (min-width: 776px) and (max-width: 5000px) {
+  .pic-container-2 {
+    width: 360px;
+    height: 360px;
+  }
+}

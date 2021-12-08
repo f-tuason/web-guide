@@ -1,0 +1,58 @@
+.margin-bottom {
+  margin-bottom: 10px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.usr-flex-1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.usr-item-1,
+.usr-item-2 {
+  text-align: left;
+  width: 100%;
+}
+
+.usr-item-1 input,
+.usr-item-2 input,
+.usr-item-1 select,
+.usr-item-2 select,
+.usr-item-whole input,
+.usr-item-whole textarea {
+  width: 98%;
+}
+
+/* --------------------------- MEDIA QUERIES ------------------------ */
+
+/* small */
+@media only screen and (max-width: 575px) {
+}
+
+/* medium */
+@media only screen and (min-width: 576px) and (max-width: 775px) {
+  .usr-flex-1 {
+    flex-direction: row;
+  }
+
+  .usr-item-1,
+  .usr-item-2 {
+    width: 50%;
+  }
+}
+
+/* large */
+@media only screen and (min-width: 776px) and (max-width: 5000px) {
+  .usr-flex-1 {
+    flex-direction: row;
+  }
+
+  .usr-item-1,
+  .usr-item-2 {
+    width: 50%;
+  }
+}
